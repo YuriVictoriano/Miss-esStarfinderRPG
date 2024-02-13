@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<head>   
+    
+<title>Magimal Hunters</title>
+<meta charset='UTF-8'>
+<link rel='stylesheet' type='text/css' href='./style11.css'>
+<link rel='icon' href='imgs/Magimal hunters_Logo.png'>
+<Style>
+    body { 
+    background-image: url('imgs/A_bosque-chuva.gif');
+    background-size:cover;
+}
+</Style>
+
+</head>
+<body>
+   <div class="divPai">
+        <div style="text-align: center;"><a href="index.html"><img src='imgs/Magimal hunters_Logo.png' alt='Avatar' style="height: 200px;"></a></div>
+        <div style="height: 50px; text-align: center; display: flex; justify-content: center; gap: 0.5%;"> 
+            <div class="ranks_bnt" style="border-radius: 20px 0 0 20px;" onclick="filtrarRank('rank1')"><img src="imgs/1estrela.png" style="height: 40px;"><span style="margin-left: 5px;">Rank 1</span> </div>
+            <div class="ranks_bnt" onclick="filtrarRank('rank2')"> <img src="imgs/2estrela.png" style="height: 40px;"><span> Rank 2</span> </div>
+            <div class="ranks_bnt" onclick="filtrarRank('rank3')"> <img src="imgs/3estrela.png" style="height: 40px;"><span> Rank 3</span> </div>
+            <div class="ranks_bnt" onclick="filtrarRank('rank4')"> <img src="imgs/4estrela.png" style="height: 40px;"><span> Rank 4</span> </div>
+            <div class="ranks_bnt" onclick="filtrarRank('rank5')"> <img src="imgs/5estrela.png" style="height: 40px;"><span> Rank 5</span> </div>
+            <div class="ranks_bnt" style="border-radius: 0 20px 20px 0; " onclick="filtrarRank('lista_criaturas')"> <img src="imgs/TrêsPontos.png" style="height: 40px;"><span> Caças</span> </div>
+        </div>
+
+        <!--   Parte das Missões  -->
+
+        <!--   Rank 1  -->
+    <div id="rank1">        
+        <div class="completo_hover" onclick="abrirdesc('FlayerLeech')" id="r1_1">
+            <div class="container">
+            <img src='imgs/criaturas/mission_complete/FLAYER LEECH_complete.png' alt='Avatar' class='image'>
+            <div class="overlay">
+            <span>
+               <h2>Fleyer Leech fugitiva</h2>
+                Recompensa: 1.400 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="FlayerLeech">
+            <div class="overlay_desc">
+            <span>
+               Recentemente um grupo de mercenários eliminou Flayer Leech Effigy e suas crias, porém uma fugiu. 
+               Eles não foram atrás, o que preocupou algumas pessoas que moram perto da localização da criatura que foi morta. 
+               Para garantir que a situação não se torne pior, eles contrataram os serviços da guilda de caçadores.<br>
+               Localização: Castrovel
+            </span>
+            </div>
+        </div></div>
+
+        <div class="geral_hover" onclick="abrirdesc('Vracinea')" id="r1_3">
+            <div class="container">
+            <img src='imgs/criaturas/Vracinea.png' alt='Avatar' class='image'>
+            <div class="overlay">
+            <span>
+               <h2>Morte a Vracinea</h2>
+                Recompensa: 1.400 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Vracinea">
+            <div class="overlay_desc">
+            <span>
+               Alguns xenobiólogos estavam estudando uma Vracinea de perto, quando eles foram atacados por ela, deixando para trás somente alguns poucos sobreviventes. 
+               Esses os quais contrataram os serviços da guilda de caçadores para eliminar a Vracinea e vingar os companheiros mortos.<br>
+               Localização: Castrovel
+            </span>
+            </div>
+        </div></div>
+
+        <div class="geral_hover" onclick="abrirdesc('KAION')" id="r1_3">
+            <div class="container">
+            <img src='imgs/criaturas/KAION.png' alt='Avatar' class='image'>
+            <div class="overlay">
+            <span>
+               <h2>Captura aos Kaion</h2>
+                Recompensa: 2.000 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="KAION">
+            <div class="overlay_desc">
+            <span>
+               Alguns mercadores estão em busca dos materias dos Kaion para a fabricação de armas especiais, para isso precisam de pelo menos duas dessa criatura.
+               Então contrataram a guilda dos caçadores para capturar os Kaion vivos.<br>
+               Localização: Vácuo de Diáspora
+            </span>
+            </div>
+        </div></div>
+    </div>
+
+        
+        <!--   Rank 2  -->
+    <div id="rank2">
+        <div class="completo_hover" onclick="abrirdesc('MORDAGAST')" id="r2_1">
+            <div class="container">
+            <img src='imgs/criaturas/mission_complete/MORDAGAST_complete.png' alt='Avatar' class='image'>
+            <div class="overlay">
+            <span>
+               <h2>Pequeno grande Mordagast</h2>
+                Recompensa: 4.600 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="MORDAGAST">
+            <div class="overlay_desc">
+            <span>
+               Pesquisadores perceberam uma mudança de tamanho em um Mordagast que habita proximo à estação de pesquisa na floresta. 
+               Com medo dessa criatura se tornar um raro Mordagast Butcher, eles contrataram a guilda dos caçadores para eliminar a criatura.<br>
+               Localização: Castrovel
+            </span>
+            </div>
+        </div></div>
+
+        <div class="geral_hover" onclick="abrirdesc('IGNURSO')" id="r2_2">
+            <div class="container">
+            <img src='imgs/criaturas/IGNURSO BURROWER.png' alt='Avatar' class='image'>
+            <div class="overlay">
+            <span>
+               <h2>Esfriando os Ignursos</h2>
+                Recompensa: 4.600 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="IGNURSO">
+            <div class="overlay_desc">
+            <span>
+               Uma corporação de mineração está tendo problemas com um casal de Ignurso que tem afastado os trabalhadores e impedindo as escavações. 
+               Para que isso pare de ocorrer, eles contrataram a guilda de caçadores para eliminar as criaturas.<br>
+               Localização: Verces
+            </span>
+            </div>
+        </div></div>
+
+        <div class="geral_hover" onclick="abrirdesc('KLIKHARP')" id="r2_3">
+            <div class="container">
+            <img src='imgs/criaturas/KLIKHARP.png' alt='Avatar' class='image'>
+            <div class="overlay">
+            <span>
+               <h2>Corrida aos Klikharp</h2>
+                Recompensa: 5.400 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="KLIKHARP">
+            <div class="overlay_desc">
+            <span>
+               Um colecionardor de criaturas planeja fazer uma corrida de Klikharp, porém precisara de mais dessas criaturas. 
+               Ele contratou os serviço da guilda de caçadores para capturar pelo menos um Klikharp grande.<br>
+               Localização: Verces
+            </span>
+            </div>
+        </div></div>
+    </div>
+
+        <!--   Rank 3  -->
+    <div id="rank3">
+        <div class="geral_hover" onclick="abrirdesc('Ksarik')" id="r3_1">
+            <div class="container">
+            <img src='imgs/criaturas/KSARIK.png' alt='Avatar' class='image'>
+            <div class="overlay">
+            <span>
+               <h2>Infestação de Ksarik</h2>
+                Recompensa: 14.700 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Ksarik">
+            <div class="overlay_desc">
+            <span>
+               Um grupo de Ksarik tem se expandindo muito rápido, o que pode trazer um perigo ecológico muito grande na área florestal que eles 
+               estão habitando. Para garantir o controle do ecossistema local, alguns xenobiólogos fizeram o pedido para que a guilda de caçadores 
+               eliminem esses Ksarik.<br>
+               Localização: Castrovel
+            </span>
+            </div>
+        </div></div>
+        
+        <div class="geral_hover" onclick="abrirdesc('Surnoch')" id="r3_2">
+            <div class="container">
+            <img src='imgs/criaturas/Surnoch.png' alt='Avatar' class='image' >
+            <div class="overlay">
+            <span>
+               <h2>Ataque de Surnoch</h2>
+                Recompensa: 25.000 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Surnoch" >
+            <div class="overlay_desc">
+            <span>
+               Uma das fábricas da corporação Glimmerglass foi atacada por um Surnoch, eles afirmam que foi uma sabotagem
+               de alguma corporação concorrente, porém, precisam que o Surnoch seja eliminado para iniciar as investigações, 
+               para isso contrataram os serviços da guilda de caçadores.<br>
+               Localização: Diáspora
+            </span>
+            </div>
+        </div></div>
+
+        <div class="geral_hover" onclick="abrirdesc('GlassSerpent')" id="r3_3">
+            <div class="container">
+            <img src='imgs/criaturas/GlassSerpent.png' alt='Avatar' class='image' >
+            <div class="overlay">
+            <span>
+               <h2>Glass Serpent Escarlate</h2>
+                Recompensa: 39.000 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="GlassSerpent">
+            <div class="overlay_desc">
+            <span>
+               Há relatos de uma GlassSerpent variante que apareceu em eox, de cor avermelhada e aparentemente mais forte. 
+               Um nobre Sabio dos ossos contratou a guilda dos caçadores para que rastrear e capturar a criatura viva, para que seja estudada.<br>
+               Localização: Eox
+            </span>
+            </div>
+        </div></div>
+
+        <div class="completo_hover" onclick="abrirdesc('Tashtari')" id="r3_4">
+            <div class="container">
+            <img src='imgs/criaturas/mission_complete/TASHITARI_complete.png' alt='Avatar' class='image' >
+            <div class="overlay">
+            <span>
+               <h2>Matilha de Tashtari</h2>
+                Recompensa: 42.500 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Tashtari">
+            <div class="overlay_desc">
+            <span>
+               Uma matilha de Tashtari vem chamando a atenção nos pântanos de Castrovel, eles conseguem predar presas enormes e 
+               já dominaram um grande território contra matilhas rivais. Muitos mercadores ficaram interessados pelos Tashtari e contrataram
+               os serviços da guilda para caça-los e pegar o que é de valor.<br>
+               Localização: Castrovel
+            </span>
+            </div>
+        </div></div>
+    </div>
+
+        <!--   Rank 4  -->
+    <div id="rank4">
+        <div class="geral_hover" onclick="abrirdesc('Ellicoth')" id="r4_1">
+        <div class="container">
+            <img src='imgs/criaturas/ELLICOTH.png' alt='Avatar' class='image' >
+            <div class="overlay">
+            <span>
+               <h2>Horda de Ellicoth</h2>
+                Recompensa: 50.000 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Ellicoth">
+            <div class="overlay_desc">
+            <span>
+               Uma horda de Ellicoth vêm se aproximando de uma cidade em Eox, toda semana eles são afastados, mas sempre retornam. 
+               O sábio dos ossos da cidade quer acabar logo com o problemas, porém ele não pode mobilizar suas forças, então contratou 
+               a guilda dos caçadores para eliminar a horda de Ellicoth. <br>
+               Localização: Eox
+            </span>
+            </div>
+        </div></div>
+        
+        <div class="completo_hover" onclick="abrirdesc('Supenga')" id="r4_2">
+            <div class="container">
+                <img src='imgs/criaturas/mission_complete/SUPENGA_TITAN_complete.png' alt='Avatar' class='image' >
+                <div class="overlay">
+                <span>
+                   <h2>Supenga Titã invasora</h2>
+                    Recompensa: 133.000 créditos<br>
+                </span>
+                </div>
+            </div>
+            <div class="container_desc"  style="display: none;" id="Supenga">
+                <div class="overlay_desc">
+                <span>
+                   Um Supenga Titã surgiu nas florestas de Castrovel, desequilibrando a ecologia local e preocupando os povos que moram na região.
+                   A guilda de caçadores pediu para que fosse investigado as pistas até o invasor para capturá-lo vivo ou morto, e assim estudar 
+                   o motivo do seu surgimento na área.<br>
+                   Localização: Castrovel
+                </span>
+                </div>
+            </div></div>
+
+        <div class="geral_hover" onclick="abrirdesc('Oma')" id="r4_3">
+            <div class="container">
+            <img src='imgs/criaturas/OMA.png' alt='Avatar' class='image' >
+            <div class="overlay">
+            <span>
+               <h2>Oma descontrolada</h2>
+                Recompensa: 198.000 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Oma">
+            <div class="overlay_desc">
+            <span>
+               Uma Oma foi vista absorvendo muita energia de um gigante gasoso próximo a verces. Um grupo de xebiólogos a observou por um 
+               tempo, e acreditam que ela esta em uma espécie de frenesi e temem que com tanta energia absorvida ela se descontrole e cause problemas 
+               por onde ela passar. Por esse motivo, eles contrataram a guilda de caçadores para capturá-la viva para estudar a causa do frenesi.<br>
+               Localização: Perto de Verces
+            </span>
+            </div>
+        </div>
+        </div>
+
+        <div class="geral_hover" onclick="abrirdesc('moonflower')" id="r4_4">
+        <div class="container">
+            <img src='imgs/criaturas/moonflower.png' alt='Avatar' class='image' >
+            <div class="overlay">
+            <span>
+               <h2>Moonflowers despertadas</h2>
+                Recompensa: 212.000 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="moonflower">
+            <div class="overlay_desc">
+            <span>
+               Exploradores acabaram acordando uma Moonflower titã por acidente, por causa disso, várias Moonflowers menores também 
+               despertaram, agora uma grande parte da floresta não pode ser explorada. O pedido veio de uma guilda de exploradores,
+               para que a Moonflower Titã fosse eliminada.<br>
+               Localização: Castrovel
+            </span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--   Rank 5  -->
+    <div id="rank5">
+        <div class="geral_hover" onclick="abrirdesc('FRUJAI_Colony')" id="r4_1">
+        <div class="container">
+            <img src='imgs/criaturas/FRUJAI COLONY.png' alt='Avatar' class='image' >
+            <div class="overlay">
+            <span>
+               <h2>No rastro da Colônia Frujai</h2>
+                Recompensa: 668.000 créditos<br>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="FRUJAI_Colony">
+            <div class="overlay_desc">
+            <span>
+               Uma grande expedição está sendo formada para caçar uma grande colônia Frujai. Tudo esta sendo feito em conjunto com grupos de pesquisadores e 
+               xenoarqueólogos. A colônia esta vagando por uma área de extrema importância para descobertas sobre os criadores de Orikolai. <br>
+               Localização: Vastidão (Orikolai)
+            </span>
+            </div>
+        </div></div>
+
+    </div>
+
+    <!--   Lista Criaturas  -->
+    <div id="lista_criaturas" style="display: none;">
+
+        <div class="lista_hover" onclick="abrirdesc('DinosaurSauropod')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Dinosaur, Sauropod ND 10 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="DinosaurSauropod">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Dinosaur, Sauropod.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+        
+        <div class="lista_hover" onclick="abrirdesc('Kothama')">
+            <div class="container">
+                <div class="overlay">
+                <span>
+                  <h3> Kothama ND 10 </h3>
+                </span>
+                </div>
+            </div>
+            <div class="container_desc"  style="display: none;" id="Kothama">
+                <div class="overlay_desc">
+                    <img src='imgs/criaturas/criatura_lista/Kothama.png' alt='Avatar' class='image' >
+                </div>
+            </div></div>
+
+            <div class="lista_hover" onclick="abrirdesc('Swamp_Strider_Crested')">
+            <div class="container">
+                <div class="overlay">
+                <span>
+                  <h3> Swamp Strider, Crested ND 10 </h3>
+                </span>
+                </div>
+            </div>
+            <div class="container_desc"  style="display: none;" id="Swamp_Strider_Crested">
+                <div class="overlay_desc">
+                    <img src='imgs/criaturas/criatura_lista/Swamp Strider, Crested.png' alt='Avatar' class='image' >
+                </div>
+            </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Thermatrod_Caldera')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Thermatrod Caldera ND 10 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Thermatrod_Caldera">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Thermatrod Caldera.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Ursikka')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Ursikka ND 10 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Ursikka">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Ursikka.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Defrex')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Defrex ND 11 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Defrex">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Defrex.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Ignurso_Mason')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Ignurso Mason ND 11 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Ignurso_Mason">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Ignurso Mason.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Kaion Multipole')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Kaion Multipole ND 11 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Kaion Multipole">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Kaion Multipole.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Nyssholora')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Nyssholora, Adult ND 11 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Nyssholora">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Nyssholora.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Deadfall')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Deadfall Stalker ND 12 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Deadfall">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Deadfall Stalker.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Dust_Manta_Monarch')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Dust Manta Monarch ND 12 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Dust_Manta_Monarch">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Dust Manta Monarch.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Irokiroi, Oshirokiroi')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Irokiroi, Oshirokiroi ND 12 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Irokiroi, Oshirokiroi">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Irokiroi, Oshirokiroi.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Rageshkor, Rock')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Rageshkor, Rock ND 12 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Rageshkor, Rock">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Rageshkor, Rock.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Cloud Ray')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Cloud Ray ND 13 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Cloud Ray">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Cloud Ray.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Mordagast Butcher')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Mordagast Butcher ND 13 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Mordagast Butcher">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Mordagast Butcher.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Thakasa')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Thakasa ND 13 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Thakasa">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Thakasa.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Plasmalisk')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Plasmalisk ND 14 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Plasmalisk">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Plasmalisk.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Xanthos')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Xanthos ND 14 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Xanthos">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Xanthos.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Fire_Whale')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Fire Whale ND 16 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Fire_Whale">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Fire Whale.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Diaspora_Wyrm_Saga')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Diaspora Wyrm Saga ND 17 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Diaspora_Wyrm_Saga">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Diaspora Wyrm Saga.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+        <div class="lista_hover" onclick="abrirdesc('Xaxmellia')">
+        <div class="container">
+            <div class="overlay">
+            <span>
+              <h3> Xaxmellia ND 17 </h3>
+            </span>
+            </div>
+        </div>
+        <div class="container_desc"  style="display: none;" id="Xaxmellia">
+            <div class="overlay_desc">
+                <img src='imgs/criaturas/criatura_lista/Xaxmellia.png' alt='Avatar' class='image' >
+            </div>
+        </div></div>
+
+
+
+
+
+    </div>
+
+   </div>
+
+
+<script type="text/javascript" src="custom2.js"></script>     
+</body>
